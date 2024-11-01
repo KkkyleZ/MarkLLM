@@ -134,8 +134,8 @@ class TSUtils:
 
 
         else:
-            self.gamma = torch.tensor([gamma]).to(device)
-            self.delta = torch.tensor([delta]).to(device)
+            self.gamma = torch.tensor([self.config.gamma]).to(self.device)
+            self.delta = torch.tensor([self.config.delta]).to(self.device)
 
 
 
